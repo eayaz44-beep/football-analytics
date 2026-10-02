@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Futbol Analizi</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: white;
+    }
+
+    header {
+      padding: 25px 8%;
+      background: #111a2e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #9ca3af;
+      font-size: 18px;
+    }
+
+    .matches {
+      padding: 20px 8% 60px;
+    }
+
+    .matches h2 {
+      margin-bottom: 25px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151f35;
+      border: 1px solid #263452;
+      border-radius: 15px;
+      padding: 25px;
+    }
+
+    .league {
+      color: #7dd3fc;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .teams {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .vs {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .stats {
+      margin-top: 25px;
+      border-top: 1px solid #263452;
+      padding-top: 20px;
+    }
+
+    .stats p {
+      margin: 8px 0;
+      color: #cbd5e1;
+    }
+
+    .button {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      padding: 12px;
+      background: #2563eb;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⚽ Futbol Analizi</h1>
+
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#">Ligler</a>
+      <a href="#">Takımlar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Futbolu Verilerle Analiz Et</h2>
+    <p>Maç istatistikleri, takım formu ve detaylı futbol analizleri.</p>
+  </section>
+
+  <section class="matches">
+
+    <h2>🔥 Öne Çıkan Maçlar</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="league">Süper Lig</div>
+
+        <div class="teams">
+          <span>Galatasaray</span>
+          <span class="vs">VS</span>
+          <span>Fenerbahçe</span>
+        </div>
+
+        <div class="stats">
+          <p>⚽ Gol Ortalaması: 2.1 - 1.8</p>
+          <p>📈 Son 5 Maç: 4G - 1B</p>
+          <p>🏠 Ev Sahibi Performansı: %78</p>
+        </div>
+
+        <a class="button" href="#">Maç Analizi</a>
+      </div>
+
+      <div class="card">
+        <div class="league">Premier League</div>
+
+        <div class="teams">
+          <span>Arsenal</span>
+          <span class="vs">VS</span>
+          <span>Chelsea</span>
+        </div>
+
+        <div class="stats">
+          <p>⚽ Gol Ortalaması: 2.3 - 1.6</p>
+          <p>📈 Son 5 Maç: 3G - 1B - 1M</p>
+          <p>🏠 Ev Sahibi Performansı: %72</p>
+        </div>
+
+        <a class="button" href="#">Maç Analizi</a>
+      </div>
+
+      <div class="card">
+        <div class="league">La Liga</div>
+
+        <div class="teams">
+          <span>Barcelona</span>
+          <span class="vs">VS</span>
+          <span>Real Madrid</span>
+        </div>
+
+        <div class="stats">
+          <p>⚽ Gol Ortalaması: 2.4 - 2.2</p>
+          <p>📈 Son 5 Maç: 4G - 0B - 1M</p>
+          <p>🏠 Ev Sahibi Performansı: %81</p>
+        </div>
+
+        <a class="button" href="#">Maç Analizi</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Futbol Analizi — İstatistik ve veri platformu
+  </footer>
+
+</body>
+</html>
